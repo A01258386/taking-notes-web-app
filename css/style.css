@@ -45,6 +45,19 @@ body {
   font-family: "Share Tech", sans-serif;
   font-size: 15px;
 }
+#newdark {
+  display: flex;
+  justify-content: space-between;
+}
+#newnote,#save{
+    background-color: #56949f;
+}
+#darktheme{
+    background-color: #9893a5;
+}
+#cancel{
+    background-color: #ea9a97;
+}
 
 #newdark {
   display: flex;
@@ -53,4 +66,14 @@ body {
 
 #controls {
   float: right;
+}
+
+a.button {
+  display: inline-flexbox;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 4px 8px 4px 8px;
+  font-family: "Share Tech", sans-serif;
 }
