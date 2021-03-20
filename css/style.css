@@ -12,3 +12,11 @@ body {
     height: 300%;
     font-family: "Share Tech", sans-serif;
   }
+
+  #mynotes #mynote {
+    text-align: center;
+    font-size: 55px;
+    font-family: "Share Tech", sans-serif;
+    font-size: 15px;
+    padding: 5px;
+  }
