@@ -58,7 +58,13 @@ body {
 #cancel{
     background-color: #ea9a97;
 }
-
+#area {
+  width: 100%;
+  height: 100%;
+  background-color: #faf4ed;
+  border-color: #286983;
+  font-family: "Share Tech", sans-serif;
+}
 #newdark {
   display: flex;
   justify-content: space-between;
