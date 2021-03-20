@@ -1,0 +1,7 @@
+body {
+    margin: 0px;
+    color:#56949f;
+    background-color:#f2e9de ;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
