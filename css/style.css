@@ -24,3 +24,10 @@ body {
   list-style-type: square;
   width: 70px;
 }
+#takebetternotes {
+  display: grid;
+  grid-template-rows: 6;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Share Tech", sans-serif;
+}
