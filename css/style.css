@@ -15,8 +15,12 @@ body {
 
   #mynotes #mynote {
     text-align: center;
-    font-size: 55px;
     font-family: "Share Tech", sans-serif;
     font-size: 15px;
     padding: 5px;
   }
+
+#mynotes #note1,#note2 {
+  list-style-type: square;
+  width: 70px;
+}
