@@ -45,3 +45,8 @@ body {
   font-family: "Share Tech", sans-serif;
   font-size: 15px;
 }
+
+#newdark {
+  display: flex;
+  justify-content: space-between;
+}
