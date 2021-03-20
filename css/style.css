@@ -40,4 +40,8 @@ body {
 .menuitem {
   display: inline;
   float: right;
+  margin-left: 10px;
+  text-decoration: none;
+  font-family: "Share Tech", sans-serif;
+  font-size: 15px;
 }
