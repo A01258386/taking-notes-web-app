@@ -48,7 +48,7 @@ body {
 .menuitem a{
   margin-left: 10px;
 }
-#newdark {
+#newdark.p  button {
   display: flex;
   justify-content: space-between;
 }
@@ -85,7 +85,6 @@ body {
 }
 
 .button {
-  display: inline-flexbox;
   border-radius: 8px;
   color: white;
   text-decoration: none;
@@ -94,9 +93,3 @@ body {
   
 }
 
-@media (min-width: 600px) {
-  #menu {
-    display: inline-block;
-    margin-bottom: 30px;
-  }
-}
