@@ -43,7 +43,6 @@ body {
 .menuitem {
   display: flex;
   flex-direction: row-reverse;
-  /* text-decoration: none; */
   font-size: 15px;
 }
 .menuitem a{
@@ -85,7 +84,7 @@ body {
   flex-direction: row-reverse;
 }
 
-a.button {
+.button {
   display: inline-flexbox;
   border-radius: 8px;
   color: white;
