@@ -79,7 +79,8 @@ body {
 }
 
 #controls {
-  float: right;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 a.button {
