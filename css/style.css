@@ -5,7 +5,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   font-family: "Share Tech", sans-serif;
-  /* height: 100vh; */
+  height: 100vh;
   
 }
 #mynotes {
@@ -70,10 +70,8 @@ body {
   border: 2px solid #286983;
  
 }
-#newdark {
-  display: flex;
-  justify-content: space-between;
-}
+
+
 .footer {
   display: table;
   text-align: center;
