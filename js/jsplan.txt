@@ -1,0 +1,6 @@
+my functions should be applied to buttons for functionality.
+-save function should save text inside text area and add to the list of mynotes section like note 3,4..this fucntion would require a for loop to automatic increment.
+-if user doesnt want to save,cancel button clears text area
+-new note button should give access to write on text area
+-dark theme button should take a function to apply colors to dark css
+-my notes section may or may not be available to fetch saved notes.
