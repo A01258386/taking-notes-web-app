@@ -48,7 +48,7 @@ body {
 .menuitem a{
   margin-left: 10px;
 }
-#newdark.p  button {
+#newdark p{
   display: flex;
   justify-content: space-between;
 }
