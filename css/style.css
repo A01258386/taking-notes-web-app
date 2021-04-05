@@ -1,26 +1,27 @@
 body {
-    margin: 0px;
-    background-color:#f2e9de ;
-    color:#56949f;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-  }
-  #mynotes {
-    display: inline-block;
-    background-color: #faf4ed;
-    width: 100%;
-    height: 300%;
-    font-family: "Share Tech", sans-serif;
-  }
+  margin: 0px;
+  background-color: #f2e9de;
+  color: #56949f;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  font-family: "Share Tech", sans-serif;
+}
+#mynotes {
+  display: inline-block;
+  background-color: #faf4ed;
+  width: 100%;
+  height: 300%;
 
-  #mynotes #mynote {
-    text-align: center;
-    font-family: "Share Tech", sans-serif;
-    font-size: 15px;
-    padding: 5px;
-  }
+}
 
-#mynotes #note1,#note2 {
+#mynotes #mynote {
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+}
+
+#mynotes #note1,
+#note2 {
   list-style-type: square;
   width: 70px;
 }
@@ -30,7 +31,7 @@ body {
   row-gap: 20px;
   margin-left: 10px;
   margin-right: 10px;
-  font-family: "Share Tech", sans-serif;
+ 
 }
 
 #header {
@@ -42,28 +43,28 @@ body {
   float: right;
   margin-left: 10px;
   text-decoration: none;
-  font-family: "Share Tech", sans-serif;
   font-size: 15px;
 }
 #newdark {
   display: flex;
   justify-content: space-between;
 }
-#newnote,#save{
-    background-color: #56949f;
+#newnote,
+#save {
+  background-color: #56949f;
 }
-#darktheme{
-    background-color: #9893a5;
+#darktheme {
+  background-color: #9893a5;
 }
-#cancel{
-    background-color: #ea9a97;
+#cancel {
+  background-color: #ea9a97;
 }
 #area {
   width: 100%;
   height: 100%;
   background-color: #faf4ed;
   border: 2px solid #286983;
-  font-family: "Share Tech", sans-serif;
+ 
 }
 #newdark {
   display: flex;
@@ -74,7 +75,7 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-family: "Share Tech", sans-serif;
+  
 }
 
 #controls {
@@ -88,7 +89,7 @@ a.button {
   text-decoration: none;
   text-align: center;
   padding: 4px 8px 4px 8px;
-  font-family: "Share Tech", sans-serif;
+  
 }
 
 @media (min-width: 600px) {
