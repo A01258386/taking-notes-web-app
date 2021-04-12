@@ -25,8 +25,8 @@ function Cancel(){
 };
 
 function Darktheme(){
-    document.body.style.backgroundColor ="purple";
-    console.log();//purple
+    var element = document.body;
+    element.classList.toggle("dark-mode");
 };
 
 
@@ -67,10 +67,10 @@ function Darktheme(){
 //     document.getElementById('area').value = "";
 // }
 
-// function darktheme(){
-//     if darkthemeButton.click() ==true:
-//         getMatchedCSSRules('darktheme.css')
-// }
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }
 // function newnote(){
 //     if newnotebtn.click() ==true:
 //         getMatchedCSSRules('')
