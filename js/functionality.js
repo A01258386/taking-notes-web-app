@@ -1,20 +1,32 @@
 
 let newnote = document.querySelector("#newnote");
 let save = document.querySelector("#save");
-let cancel = document.querySelector("#newnote");
-let darktheme = document.querySelector("#newnote");
+let cancel = document.querySelector("#cancel");
+let darktheme = document.querySelector("#darktheme");
 
-newnote.addEventListener("click", pink);
-save.addEventListener("click", blue);
+newnote.addEventListener("click", NewNote);
+save.addEventListener("click", Save);
+cancel.addEventListener("click", Cancel);
+darktheme.addEventListener("click", Darktheme);
 
-function pink(e){
+function NewNote(){
     document.body.style.backgroundColor = "pink";
-  console.log(e); // pink
+  console.log(); // pink
 };
 
-function blue(e){
+function Save(){
     document.body.style.backgroundColor = "blue";
-  console.log(e); // blue
+  console.log(); // blue
+};
+
+function Cancel(){
+    document.body.style.backgroundColor ="red";
+    console.log();//red
+};
+
+function Darktheme(){
+    document.body.style.backgroundColor ="purple";
+    console.log();//purple
 };
 
 
