@@ -32,9 +32,20 @@ function Darktheme(){
     
     element.classList.toggle("dark-mode");
     mynotes.classList.toggle("sidebardarkmode");
-    darktheme.textContent="Light Theme";
+    
+
+    if (darktheme.textContent==="Dark Theme") {
+        darktheme.textContent="Light Theme"; 
+      } else {
+        darktheme.textContent="Dark Theme";;
+      }
+
 };
 
+// if darktheme.textContent==="Dark Theme"{
+//     darktheme.textContent="Light Theme";
+
+// }
 
 
 
