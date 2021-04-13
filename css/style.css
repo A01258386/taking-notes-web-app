@@ -8,13 +8,26 @@ body {
   height: 100vh;
   
 }
-#mynotes {
+
+
+.mynotes {
   display: inline-block;
   background-color: #faf4ed;
   width: 100%;
   height: 300%;
 
 }
+
+.dark-mode {
+  background-color:  #1f1d2e;
+  color: white;
+}
+
+.sidebardarkmode{
+  background-color: #6e6a86;
+  color: white;
+}
+
 
 #mynotes #mynote {
   text-align: center;

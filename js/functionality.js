@@ -4,6 +4,9 @@ let save = document.querySelector("#save");
 let cancel = document.querySelector("#cancel");
 let darktheme = document.querySelector("#darktheme");
 
+let mynotes = document.querySelector(".mynotes");
+// let darktheme = document.querySelector("#darktheme");
+
 newnote.addEventListener("click", NewNote);
 save.addEventListener("click", Save);
 cancel.addEventListener("click", Cancel);
@@ -25,8 +28,11 @@ function Cancel(){
 };
 
 function Darktheme(){
-    var element = document.body;
+    let element = document.body;
+    
     element.classList.toggle("dark-mode");
+    mynotes.classList.toggle("sidebardarkmode");
+    darktheme.textContent="Light Theme";
 };
 
 
