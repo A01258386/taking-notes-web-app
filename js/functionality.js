@@ -23,8 +23,9 @@ function Save(){
 };
 
 function Cancel(){
-    document.body.style.backgroundColor ="red";
-    console.log();//red
+    document.getElementById('area').value = "";
+    document.getElementById('save').value = "";
+    document.getElementById('cancel').value = "";
 };
 
 function Darktheme(){
@@ -47,9 +48,6 @@ function Darktheme(){
 
 // }
 
-
-
-
 // function check_web_storage_support() {
 //     if(typeof(Storage) !== "undefined") {
 //         return(true);
@@ -70,7 +68,7 @@ function Darktheme(){
 // }
 // function save() {
 //     if(check_web_storage_support() == true) {
-//         var area = document.getElementById("area");
+//         let area = document.getElementById("area");
 //         if(area.value != '') {
 //             localStorage.setItem("note", area.value);
 //         }
@@ -84,10 +82,6 @@ function Darktheme(){
 //     document.getElementById('area').value = "";
 // }
 
-function myFunction() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-  }
 // function newnote(){
 //     if newnotebtn.click() ==true:
 //         getMatchedCSSRules('')

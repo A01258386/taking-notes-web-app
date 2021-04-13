@@ -9,7 +9,6 @@ body {
   
 }
 
-
 .mynotes {
   display: inline-block;
   background-color: #faf4ed;
@@ -23,11 +22,14 @@ body {
   color: white;
 }
 
+.invisible{
+  visibility: hidden;
+}
+
 .sidebardarkmode{
   background-color: #6e6a86;
   color: white;
 }
-
 
 #mynotes #mynote {
   text-align: center;
@@ -82,7 +84,6 @@ body {
   border: 2px solid #286983;
  
 }
-
 
 .footer {
   display: table;
