@@ -5,13 +5,14 @@ let cancel = document.querySelector("#cancel");
 let darktheme = document.querySelector("#darktheme");
 let area = document.querySelector("#area");
 
-let notesArray={title:"note one", body:"this is my first note"};
+let notesArray=[{title:"note one", body:"this is my first note"},];
 let mynotes = document.querySelector(".mynotes");
 
 newnote.addEventListener("click", NewNote);
 save.addEventListener("click", Save);
 cancel.addEventListener("click", Cancel);
 darktheme.addEventListener("click", Darktheme);
+
 
 function NewNote(){
 
@@ -28,9 +29,11 @@ function NewNote(){
   
 
 function Save(){
-   alert("The title of the note");
-  
-};
+   prompt("The title of the note");
+  let input = document.getElementById("userInput").value;
+  // alert(input);
+}
+
 
 function Cancel(){
     
@@ -38,7 +41,6 @@ function Cancel(){
     save.classList.add('invisible');
     area.classList.add("invisible");
     }
-
 
 
 function Darktheme(){
