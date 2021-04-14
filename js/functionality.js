@@ -3,9 +3,10 @@ let newnote = document.querySelector("#newnote");
 let save = document.querySelector("#save");
 let cancel = document.querySelector("#cancel");
 let darktheme = document.querySelector("#darktheme");
+let area = document.querySelector("#area");
 
+let notesArray={title:"note one", body:"this is my first note"};
 let mynotes = document.querySelector(".mynotes");
-// let darktheme = document.querySelector("#darktheme");
 
 newnote.addEventListener("click", NewNote);
 save.addEventListener("click", Save);
@@ -13,20 +14,32 @@ cancel.addEventListener("click", Cancel);
 darktheme.addEventListener("click", Darktheme);
 
 function NewNote(){
-    document.body.style.backgroundColor = "pink";
-  console.log(); // pink
-};
+
+    if (cancel.classList.contains('invisible')){
+    cancel.classList.remove('invisible');
+    save.classList.remove('invisible');
+    area.classList.remove("invisible");
+    }
+
+    else{
+    area.value = "";
+    }
+    }
+  
 
 function Save(){
-    document.body.style.backgroundColor = "blue";
-  console.log(); // blue
+   alert("The title of the note");
+  
 };
 
 function Cancel(){
-    document.getElementById('area').value = "";
-    document.getElementById('save').value = "";
-    document.getElementById('cancel').value = "";
-};
+    
+    cancel.classList.add('invisible');
+    save.classList.add('invisible');
+    area.classList.add("invisible");
+    }
+
+
 
 function Darktheme(){
     let element = document.body;
@@ -35,10 +48,10 @@ function Darktheme(){
     mynotes.classList.toggle("sidebardarkmode");
     
 
-    if (darktheme.textContent==="Dark Theme") {
-        darktheme.textContent="Light Theme"; 
+    if (darktheme.textContent==="Light Theme") {
+        darktheme.textContent="Dark Theme"; 
       } else {
-        darktheme.textContent="Dark Theme";;
+        darktheme.textContent="Light Theme";
       }
 
 };
