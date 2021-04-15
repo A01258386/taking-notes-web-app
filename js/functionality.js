@@ -68,16 +68,13 @@ function Darktheme(){
       }
 
 };
-const list = document.querySelector(".mynotes");
-function populatenotelist(arr) {
-  // get access to the <ul>
-  for (let item of notesArray) {
-    console.log(item); //just testing
+
+const list = document.querySelector(".notes");
+function populatenotelist() {
+    
     let elem = document.createElement("li"); //create a new < li>
-    let text = document.createTextNode(item); // create a text node for that <li>
-    elem.appendChild(text); //add the text node to <li>
+    elem.textContent="some text";
     list.appendChild(elem); // add li to <ul>
-  }
-}
-populatenotelist(arr);
+ }
+populatenotelist();
 
