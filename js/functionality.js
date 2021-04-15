@@ -68,8 +68,8 @@ function Darktheme(){
       }
 
 };
-
-function populatenotelist(notesArray) {
+const list = document.querySelector(".mynotes");
+function populatenotelist(arr) {
   // get access to the <ul>
   for (let item of notesArray) {
     console.log(item); //just testing
@@ -79,24 +79,5 @@ function populatenotelist(notesArray) {
     list.appendChild(elem); // add li to <ul>
   }
 }
-populatenotelist(notesArray);
+populatenotelist(arr);
 
-
-// function check_web_storage_support() {
-//     if(typeof(Storage) !== "undefined") {
-//         return(true);
-//     }
-//     else {
-//         alert("Web storage unsupported!");
-//         return(false);
-//     }
-// }
-// function display_saved_note() {
-//     if(check_web_storage_support() == true) {
-//         result = localStorage.getItem('note');
-//     }
-//     if(result === null) {
-//         result = "No note saved";
-//     }
-//     
-// }
