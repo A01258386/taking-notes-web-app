@@ -38,10 +38,11 @@ function Save(){
   // listitems.push('title')
   let noteobject={title:notetitle, body:notebody}
   notesArray.push(noteobject)
+
   console.log(notesArray)
-  // let notesArray=[{title:"note one", body:"this is my first note"}];
   console.log(area.value)
   console.log(notetitle)
+  
 }
 
 
@@ -68,11 +69,18 @@ function Darktheme(){
 
 };
 
+function populatenotelist(notesArray) {
+  // get access to the <ul>
+  for (let item of notesArray) {
+    console.log(item); //just testing
+    let elem = document.createElement("li"); //create a new < li>
+    let text = document.createTextNode(item); // create a text node for that <li>
+    elem.appendChild(text); //add the text node to <li>
+    list.appendChild(elem); // add li to <ul>
+  }
+}
+populatenotelist(notesArray);
 
-// if darktheme.textContent==="Dark Theme"{
-//     darktheme.textContent="Light Theme";
-
-// }
 
 // function check_web_storage_support() {
 //     if(typeof(Storage) !== "undefined") {
@@ -90,25 +98,5 @@ function Darktheme(){
 //     if(result === null) {
 //         result = "No note saved";
 //     }
-//     document.getElementById('area').value = result;
-// }
-// function save() {
-//     if(check_web_storage_support() == true) {
-//         let area = document.getElementById("area");
-//         if(area.value != '') {
-//             localStorage.setItem("note", area.value);
-//         }
-//         else {
-//             alert("Nothing to save");
-//         }
-//     }
-// }
-
-// function cancel() {
-//     document.getElementById('area').value = "";
-// }
-
-// function newnote(){
-//     if newnotebtn.click() ==true:
-//         getMatchedCSSRules('')
+//     
 // }
