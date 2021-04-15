@@ -4,8 +4,9 @@ let save = document.querySelector("#save");
 let cancel = document.querySelector("#cancel");
 let darktheme = document.querySelector("#darktheme");
 let area = document.querySelector("#area");
+let notesArray=[{title:"note one", body:"this is my first note"},{title:"note two", body:"this is my second note"}];
+let itemslist=[];
 
-let notesArray=[{title:"note one", body:"this is my first note"},];
 let mynotes = document.querySelector(".mynotes");
 
 newnote.addEventListener("click", NewNote);
@@ -29,9 +30,18 @@ function NewNote(){
   
 
 function Save(){
-   prompt("The title of the note");
-  let input = document.getElementById("userInput").value;
-  // alert(input);
+  let notebody =area.value
+  let notetitle = prompt("The title of the note");
+
+  // let body = document.getElementById("userInput").value;
+  // notesArray.push({notetitle:})
+  // listitems.push('title')
+  let noteobject={title:notetitle, body:notebody}
+  notesArray.push(noteobject)
+  console.log(notesArray)
+  // let notesArray=[{title:"note one", body:"this is my first note"}];
+  console.log(area.value)
+  console.log(notetitle)
 }
 
 
@@ -57,6 +67,7 @@ function Darktheme(){
       }
 
 };
+
 
 // if darktheme.textContent==="Dark Theme"{
 //     darktheme.textContent="Light Theme";
